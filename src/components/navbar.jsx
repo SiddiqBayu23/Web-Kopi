@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import reactLogo from '../assets/react.svg'; // sesuaikan jalur dengan lokasi logo
-// import './Navbar.css'; // tambahkan file CSS untuk navbar
+import './navbar.css';
 
 const Navbar = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={reactLogo} alt="Logo" />
+        <Link to="/"><img src="/path-to-your-logo.png" alt="Logo" /></Link>
       </div>
-      <div className="navbar-links">
-        <Link to="/" className="navbar-link">Home</Link>
-        <Link to="/about" className="navbar-link">About</Link>
-        <Link to="/contact" className="navbar-link">Contact</Link>
-        <Link to="/services" className="navbar-link">Services</Link>
+      
+      <div className="navbar-toggle" onClick={toggleMenu}>
+        &#9776; {/* Icon burger */}
       </div>
+      
+      <ul className={`navbar-menu ${menuActive ? 'active' : ''}`}>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/category">Category</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
     </nav>
   );
 };
