@@ -1,4 +1,9 @@
-/* General styles for the navbar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,17 +25,18 @@
 
 /* Ensure the logo image is circular */
 .navbar-logo img {
-  width: 40px; /* Adjust the size as needed */
-  height: 40px; /* Adjust the size as needed */
+  width: 40px; /* Size of the logo */
+  height: 40px; /* Size of the logo */
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image covers the area */
 }
 
 
 .navbar-brand {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
+  margin-left: 10px; /* Adjust the value to control the spacing */
+  font-size: 1.2em; /* Adjust font size if needed */
+  color: #ffffff; /* Adjust text color if needed */
+  text-decoration: none; /* R emove underline from links */
 }
 
 /* Right side: menu styles */

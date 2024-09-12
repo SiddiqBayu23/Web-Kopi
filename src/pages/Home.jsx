@@ -8,7 +8,7 @@ const Home = () => {
       <Navbar /> {/* Navbar component */}
 
       {/* Hero Banner Section */}
-      <header className="hero-banner">
+        <header className="hero-banner">
       </header>
 
       {/* About Section */}
