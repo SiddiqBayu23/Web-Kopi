@@ -1,7 +1,7 @@
 /* General styles for the hero banner */
 .hero-banner {
     text-align: center;
-    padding: 200px 50px; /* Default padding for larger screens */
+    padding: 300px 50px; /* Default padding for larger screens */
     background-image: url('../assets/hero-banner.png'); /* Path to your image */
     background-size: cover;
     background-position: center;
