@@ -1,77 +1,96 @@
-/* Styling dasar untuk navbar */
+/* General styles for the navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between; /* Logo di kiri, menu di tengah */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333; /* Warna latar belakang */
-    position: relative;
-    z-index: 10;
-  }
-  
-  .navbar-logo img {
-    width: 50px; /* Atur ukuran logo */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #574040;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10%; /* Move the left side towards the center */
+}
+
+.navbar-logo {
+  margin-right: 10px; /* Adjust spacing between the logo and the brand name */
+}
+
+/* Ensure the logo image is circular */
+.navbar-logo img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Right side: menu styles */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%; /* Move the right side towards the center */
+}
+
+.navbar-menu li {
+  margin-left: 20px; /* Spacing between the menu items */
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px; /* Font size for the links */
+  letter-spacing: 1px; /* Add letter spacing */
+}
+
+.navbar-menu li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Burger icon for small screens */
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+/* Mobile and tablet view */
+@media screen and (max-width: 768px) {
   .navbar-menu {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+
+  .navbar-menu.active {
     display: flex;
-    list-style-type: none;
-    gap: 20px; /* Jarak antar item menu */
-    margin: 0;
-    padding: 0;
   }
-  
+
   .navbar-menu li {
-    display: inline;
+    margin: 10px 0;
   }
-  
-  .navbar-menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-menu li a:hover {
-    color: #f0a500; /* Warna saat hover */
-  }
-  
-  /* Responsive: Atur navbar untuk layar yang lebih kecil (mobile) */
-  @media (max-width: 768px) {
-    .navbar {
-      justify-content: space-between;
-    }
-  
-    .navbar-menu {
-      display: none; /* Sembunyikan menu di tampilan mobile */
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar-menu li {
-      margin: 10px 0;
-    }
-  
-    .navbar-menu.active {
-      display: flex; /* Tampilkan menu saat tombol burger diklik */
-    }
-  
-    .navbar-toggle {
-      display: block;
-      cursor: pointer;
-      font-size: 24px;
-      color: white;
-    }
-  }
-  
-  /* Burger menu styling */
+
   .navbar-toggle {
-    display: none; /* Hanya tampil di mobile */
+    display: block; /* Show burger icon */
   }
-  
+}

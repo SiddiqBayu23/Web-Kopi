@@ -1,0 +1,29 @@
+/* General styles for the hero banner */
+.hero-banner {
+    text-align: center;
+    padding: 200px 50px; /* Default padding for larger screens */
+    background-image: url('../assets/hero-banner.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .hero-banner {
+      padding: 150px 30px; /* Adjust padding for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-banner {
+      padding: 100px 20px; /* Adjust padding for mobile phones */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-banner {
+      padding: 80px 10px; /* Adjust padding for very small screens */
+    }
+  }
+  
