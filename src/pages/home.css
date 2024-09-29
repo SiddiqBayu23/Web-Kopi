@@ -27,3 +27,23 @@
     }
   }
   
+  /* about */
+  /* home.css */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about div {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+  }
+
+  #about div {
+    padding: 10px;
+  }
+}
