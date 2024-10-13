@@ -1,49 +1,94 @@
 /* General styles for the hero banner */
 .hero-banner {
-    text-align: center;
-    padding: 300px 50px; /* Default padding for larger screens */
-    background-image: url('../assets/hero-banner.png'); /* Path to your image */
-    background-size: cover;
-    background-position: center;
-    color: white;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 1024px) {
-    .hero-banner {
-      padding: 150px 30px; /* Adjust padding for tablets */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .hero-banner {
-      padding: 100px 20px; /* Adjust padding for mobile phones */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-banner {
-      padding: 80px 10px; /* Adjust padding for very small screens */
-    }
-  }
-  
-  /* about */
-  /* home.css */
-#about {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  padding: 300px 50px; /* Default padding for larger screens */
+  background-image: url('../assets/hero-banner.png'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
-#about div {
-  flex: 1;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-banner {
+    padding: 150px 30px; /* Adjust padding for tablets */
+  }
 }
 
 @media (max-width: 768px) {
-  #about {
-    flex-direction: column;
+  .hero-banner {
+    padding: 100px 20px; /* Adjust padding for mobile phones */
   }
+}
 
-  #about div {
-    padding: 10px;
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 80px 10px; /* Adjust padding for very small screens */
   }
+}
+
+/* about */
+/* home.css */
+#about {
+display: flex;
+flex-wrap: wrap;
+}
+
+#about div {
+flex: 1;
+}
+
+@media (max-width: 768px) {
+#about {
+  flex-direction: column;
+}
+
+#about div {
+  padding: 10px;
+}
+}
+
+/* Menu */
+#services {
+padding: 50px;
+text-align: center;
+}
+
+#services h2 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+#services p {
+font-size: 1.2rem;
+margin-bottom: 40px;
+}
+
+.card-container {
+display: flex;
+justify-content: space-around;
+}
+
+.card {
+width: 300px;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+font-size: 1.5rem;
+margin-bottom: 15px;
+}
+
+.card img {
+width: 100%;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+.card p {
+font-size: 1rem;
 }
