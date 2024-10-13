@@ -31,9 +31,9 @@ const Home = () => {
         </div>
       </section>
 
-     {/* Menu */}
+     {/* Category */}
      <section id="services">
-         <h2>Our Services</h2>
+         <h2>Category</h2>
             <p>We offer a wide range of services to meet your needs.</p>
 
     <div className="card-container">
