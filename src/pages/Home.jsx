@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/navbar.jsx";
 import aboutImage from '../assets/aboutImage.png'; // Import the image
 import './home.css'; // Import the CSS file
 
@@ -31,11 +31,21 @@ const Home = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Menu */}
       <section id="services">
   <h2>Category</h2>
 
   <div className="card-container">
+=======
+     {/* Category */}
+     <section id="services">
+         <h2>Category</h2>
+            <p>We offer a wide range of services to meet your needs.</p>
+
+    <div className="card-container">
+    
+>>>>>>> 7fd7d366d52011aac618ee0146d52c645c0fcd87
     {/* Card 1 */}
     <div className="card">
       <h3>Menu</h3>
@@ -56,9 +66,15 @@ const Home = () => {
       <img src="https://via.placeholder.com/150" alt="Service 3" />
       <p>Service 3 description here.</p>
     </div>
+<<<<<<< HEAD
   </div>
 </section>
 
+=======
+
+  </div>
+</section>
+>>>>>>> 7fd7d366d52011aac618ee0146d52c645c0fcd87
 
       {/* Contact Section */}
       <section id="contact" style={{ padding: '50px', backgroundColor: '#f4f4f4' }}>
